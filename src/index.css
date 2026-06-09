@@ -1,0 +1,69 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply bg-dark-800 text-white font-sans antialiased;
+  }
+
+  ::-webkit-scrollbar {
+    width: 4px;
+    height: 4px;
+  }
+  ::-webkit-scrollbar-track {
+    @apply bg-transparent;
+  }
+  ::-webkit-scrollbar-thumb {
+    @apply bg-white/10 rounded-full;
+  }
+  ::-webkit-scrollbar-thumb:hover {
+    @apply bg-white/20;
+  }
+
+  input, select, textarea {
+    @apply bg-dark-700 border border-white/10 rounded-lg px-3 py-2.5 text-sm text-white/90 
+           placeholder-white/25 outline-none transition-all duration-150
+           focus:border-orange-500/50 focus:ring-1 focus:ring-orange-500/20
+           w-full min-h-[44px];
+  }
+
+  select option {
+    @apply bg-dark-700;
+  }
+}
+
+@layer components {
+  .btn-primary {
+    @apply inline-flex items-center justify-center gap-2 min-h-[44px] px-5 py-2.5
+           text-sm font-medium text-white rounded-lg transition-all duration-150
+           disabled:opacity-50 disabled:cursor-not-allowed;
+    background: linear-gradient(90deg, #f97316, #eab308);
+  }
+  .btn-primary:hover:not(:disabled) {
+    background: linear-gradient(90deg, #ea6c0a, #d4a008);
+  }
+
+  .btn-outline {
+    @apply inline-flex items-center justify-center gap-2 min-h-[44px] px-5 py-2.5
+           text-sm font-medium rounded-lg border transition-all duration-150
+           border-orange-500/30 text-orange-400 bg-orange-500/5
+           hover:bg-orange-500/10 disabled:opacity-50;
+  }
+
+  .card {
+    @apply bg-dark-700/50 border border-white/[0.06] rounded-xl;
+  }
+
+  .page-container {
+    @apply p-4 sm:p-6 space-y-5;
+  }
+}
+
+.gradient-text {
+  background: linear-gradient(90deg, #f97316, #eab308);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
