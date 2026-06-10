@@ -277,7 +277,7 @@ export default function Settings() {
       .finally(() => setOauthLoading(false))
   }, [])
 
-  console.log("PIC URL:", influencer?.instagram_pic_url)
+  // console.log("PIC URL:", influencer?.instagram_pic_url)
   return (
     <div className="page-container space-y-4">
       <h1 className="text-lg font-semibold text-white/90">Settings</h1>
