@@ -55,7 +55,7 @@ export default function Sidebar({ isOpen, onClose }: SidebarProps) {
         <div className="px-4 py-3 border-b border-white/[0.06] flex items-center gap-3">
           {influencer?.instagram_pic_url ? (
             <img
-              src={`http://127.0.0.1:8000/instagram-image?url=${encodeURIComponent(
+              src={`https://deal-tracker-frontend-one.vercel.app/instagram-image?url=${encodeURIComponent(
                 influencer.instagram_pic_url
               )}`}
               alt="profile"
