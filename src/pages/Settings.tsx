@@ -311,7 +311,7 @@ export default function Settings() {
               <img
                 src={
                   influencer?.instagram_pic_url
-                    ? `http://127.0.0.1:8000/instagram-image?url=${encodeURIComponent(influencer.instagram_pic_url)}`
+                    ? `https://dealtracker-backend.onrender.com/instagram-image?url=${encodeURIComponent(influencer.instagram_pic_url)}`
                     : "https://ui-avatars.com/api/?name=User"
                 }
                 alt="profile"
