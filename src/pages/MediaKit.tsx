@@ -129,7 +129,7 @@ export default function MediaKit() {
         <div className="flex items-center gap-4">
           {influencer?.instagram_pic_url ? (
             <img
-              src={`http://127.0.0.1:8000/instagram-image?url=${encodeURIComponent(
+              src={`https://dealtracker-backend.onrender.com/instagram-image?url=${encodeURIComponent(
                 influencer.instagram_pic_url
               )}`}
               alt="profile"
